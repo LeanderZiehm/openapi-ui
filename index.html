@@ -1,16 +1,18 @@
 <!doctype html>
 <html>
   <head>
-    <title>My Scalar API Reference</title>
+    <title>Scalar API Reference</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div id="app"></div>
+    <!-- Load Scalar from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@scalar/api-reference"></script>
     <script>
       Scalar.createApiReference('#app', {
-        url: './your-api.yaml', // or a remote URL
+        url: 'https://prod.0codekit.com/docs',
+        // Optional: Use Scalar's proxy to avoid CORS issues if needed
         proxyUrl: 'https://proxy.scalar.com'
       })
     </script>
